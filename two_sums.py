@@ -30,11 +30,21 @@
 # sudo code
 # i equal to 0
 # j equal to 1
-# index_list equal to []
 # if a[i] + a[j] == target
-# if true return index_list.append(i,j)
-# while i != array length - 2 # minus two so you don't get a breakout error because you're out of range for the loop
-#   for 
+    # if true return [i,j]
+# else
+    # this is so you don't go over the first two to save some time
+    # i increment 1
+    # j increment 1
+# while i != array length - 1 # minus two so you don't get a breakout error because you're out of range for the loop
+#   while j != array length
+        # if array[i] + array[j] is equal to target
+            # return [i,j]
+        # otherwise increment j + 1
+    # after the while if one isn't found then
+    # increment i + 1
+    # and reset j to i + 1
+# if those don't work then return false
 
 def two_sums(array, target):
     i = 0
